@@ -126,7 +126,7 @@ const { t } = useI18n();
 const visibleHeaders = computed(() => props.headers.filter(h => h.visible !== false).map(h => ({ ...h, title: t(h.title) })));
 const mainLeftHeader = computed(() => props.headers.find(h => h.mobileMain === 'left'));
 const mainRightHeader = computed(() => props.headers.find(h => h.mobileMain === 'right'));
-const visibleListLeftHeaders = computed(() => visibleHeaders.value.filter(h => h.mobileListLeft === true && !h.mobileMain));
+const visibleListLeftHeaders = computed(() => visibleHeaders.value.filter(h => h.mobileListLeft === true && !h.mobileMain).slice(0, 3));
 const visibleListRightHeaders = computed(() => visibleHeaders.value.filter(h => h.mobileListLeft === false && !h.mobileMain));
 
 const filteredItems = computed(() => {
