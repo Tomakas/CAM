@@ -1,7 +1,7 @@
 // src/plugins/axios.js
 
 import axios from 'axios';
-import { useAppStore } from ' @/stores/app';
+import { useAppStore } from '@/stores/app';
 import { useRouter } from 'vue-router'; // Import useRouter
 
 const API_BASE_URL = 'https://api.elementarypos.com';
