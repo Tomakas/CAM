@@ -2,7 +2,7 @@
 
 import { useAppStore } from '@/stores/app';
 
-// Importujeme nízkoúrovňové funkce pro načítání demo dat
+// Importujeme nízkoúrovňové funkce pro načítání demodfdf dat.
 import { getProducts as getDemoProducts, getDirectory as getDemoDirectory } from '@/demo/demoAPI.js';
 import { getDemoData as getDemoSales } from '@/demo/demoGenerator.js';
 
